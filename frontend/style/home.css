@@ -3,6 +3,7 @@ body,
 html {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* CSS Reset */
@@ -26,12 +27,8 @@ figcaption {
 
 /* navbar */
 nav {
-    height: 6rem;
-    width: 100vw;
     display: flex;
     justify-content: space-between;
-    /* position: fixed; */
-    /* z-index: 10; */
 }
 
 /*Styling logo*/
@@ -89,17 +86,31 @@ nav {
     display: none;
 }
 
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    transition: all 0.7s ease;
+    width: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
 /*Stying for small screens*/
 @media screen and (max-width: 800px) {
     nav {
         position: fixed;
         z-index: 3;
-        /* background-color: #ffffffcb; */
+        width: 100vw;
     }
 
     .logo span {
         font-size: 1.2rem;
         font-weight: bold;
+        display: none;
     }
 
     .hamburger {
@@ -128,7 +139,7 @@ nav {
 
     .nav-links.open {
         clip-path: circle(1000px at 90% -10%);
-        -webkit-clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90%);
         pointer-events: all;
     }
 
@@ -175,20 +186,6 @@ nav {
     }
 }
 
-/*Animating Hamburger Icon on Click*/
-.toggle .line1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.toggle .line2 {
-    transition: all 0.7s ease;
-    width: 0;
-}
-
-.toggle .line3 {
-    transform: rotate(45deg) translate(-5px, -6px);
-}
-
 /* end of navbar */
 
 
@@ -197,7 +194,6 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* flex-wrap: wrap; */
 }
 
 .banner img {
@@ -239,7 +235,7 @@ nav {
     margin-top: 10px;
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     .banner-img {
         width: 550px;
     }
@@ -259,13 +255,14 @@ nav {
     }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .banner {
         flex-direction: column;
+        /* align-items: center; */
     }
 
     .banner-img {
-        width: auto;
+        min-width: 100vw;
     }
 
     .banner-content h1 {
@@ -283,7 +280,11 @@ nav {
     }
 }
 
-@media (max-width: 575px) {
+@media screen and (max-width: 490px) {
+    .banner {
+        flex-direction: column;
+    }
+
     .banner-content h1 {
         font-size: 25px;
     }
@@ -299,3 +300,71 @@ nav {
 }
 
 /* end of banner code  */
+
+/* my package code */
+.packages,
+.package-title {
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.package-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 64px;
+    text-align: center;
+    padding: 4rem 0;
+
+}
+
+.package-image {
+    position: relative;
+}
+
+.white-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 0.5rem 0;
+    margin: 0 auto;
+    width: 20%;
+}
+
+.description-box {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.package-description {
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .package-images {
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .package-image img {
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    .package-description {
+        font-size: 16px;
+    }
+}
+
+
+
+/* end of my package code */
