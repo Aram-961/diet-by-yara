@@ -276,7 +276,7 @@ nav {
 
     .banner-content button {
         font-size: 20px;
-        padding: 6px 12px;
+        padding: 10px 12px;
     }
 }
 
@@ -295,7 +295,7 @@ nav {
 
     .banner-content button {
         font-size: 20px;
-        padding: 5px 8px;
+        padding: 10px 8px;
     }
 }
 
@@ -308,11 +308,22 @@ nav {
     padding: 3rem 0;
 }
 
+.packages button {
+    background-color: #014dac;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
 .package-images {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 64px;
+    gap: 15rem;
     text-align: center;
     padding: 4rem 0;
 
@@ -350,21 +361,91 @@ nav {
 @media screen and (max-width: 768px) {
     .package-images {
         flex-direction: column;
+        margin: 2rem 0;
         padding: 1rem 0;
+        gap: 5rem;
     }
 }
 
 @media screen and (max-width: 490px) {
+    .package-images {
+        gap: 2rem;
+    }
+
     .package-image img {
         width: 100%;
-        padding: 1rem 0;
+        margin: 3rem 0;
     }
 
     .package-description {
         font-size: 16px;
     }
+
+    .packages button {
+        margin-top: 5rem;
+    }
 }
 
-
-
 /* end of my package code */
+
+/* consultation code */
+
+
+.consultation-title,
+p {
+    text-align: center;
+    margin: 1rem 0;
+    color: #48525B;
+}
+
+.consultation-description {
+    color: #000;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.consultation-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.consultation-content h1 {
+    font-weight: 300;
+    font-size: 25px;
+    padding: 2rem 0;
+}
+
+.price-container {
+    background-color: #014dac;
+    padding: 1rem 3rem;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.consultation-container {
+    margin: 0 2rem;
+}
+
+.img-container {
+    position: relative;
+}
+
+.consultation-img {
+    position: absolute;
+    right: 0;
+    overflow: hidden;
+    bottom: 10%;
+    width: 15%;
+}
+
+/* responsive  */
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 768px) {
+    
+}
+
+/* end of package code */
