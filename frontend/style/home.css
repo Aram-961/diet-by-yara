@@ -224,7 +224,7 @@ nav {
     margin: 3rem 0;
 }
 
-.banner-content button {
+.banner-content button{
     background-color: #014dac;
     color: #fff;
     border: none;
@@ -233,6 +233,11 @@ nav {
     font-size: 20px;
     cursor: pointer;
     margin-top: 10px;
+}
+
+.banner-content a {
+    color: #fff;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 1024px) {
@@ -308,7 +313,7 @@ nav {
     padding: 3rem 0;
 }
 
-.packages button {
+.packages button{
     background-color: #014dac;
     color: #fff;
     border: none;
@@ -317,6 +322,11 @@ nav {
     font-size: 20px;
     cursor: pointer;
     margin-top: 50px;
+}
+
+.packages a {
+    text-decoration: none;
+    color: #fff;
 }
 
 .package-images {
@@ -360,7 +370,11 @@ nav {
 
 @media screen and (max-width: 1024px) {
     .package-image {
-        padding: 2rem 0;
+        padding: 1rem 0;
+    }
+
+    .package-images {
+        gap: 5rem;
     }
 }
 
@@ -398,8 +412,6 @@ nav {
 /* end of my package code */
 
 /* consultation code */
-
-
 .consultation-title,
 p {
     text-align: center;
@@ -415,8 +427,10 @@ p {
 
 .consultation-content {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin: 0 20rem;
     align-items: center;
+    text-align: left;
 }
 
 .consultation-content h1 {
@@ -449,15 +463,35 @@ p {
 }
 
 /* responsive  */
+
+@media screen and (max-width: 1440px) {
+    .consultation-content {
+        margin: 0 4rem;
+        align-items: center;
+        text-align: left;
+    }
+}
 @media screen and (max-width: 1024px) {
+
+    .consultation-content {
+        margin: 0 2rem;
+        align-items: center;
+        text-align: left;
+    }
     .img-container {
         display: none;
     }
 }
 
 @media screen and (max-width: 768px) {
+
+    .consultation-content {
+        margin: 0 2rem;
+        align-items: center;
+        text-align: left;
+    }
     .consultation-description {
-        font-size: 17px;
+        font-size: 15px;
     }
 
     .consultation-container h1 {
@@ -467,6 +501,22 @@ p {
     .img-container {
         display: none;
     }
+}
+
+
+@media screen and (max-width: 490px) {
+    .consultation-content {
+        margin: 0 1rem;
+    }
+
+    .consultation-container h1 {
+        font-size: 18.6px;
+    }
+
+    .consultation-container h1:nth-child(7) {
+        font-size: 16px;
+    }
+
 }
 
 /* end of package code */
@@ -508,5 +558,28 @@ p {
     display: flex;
     align-items: center;
     font-size: 20px;
+}
+
+@media screen and (max-width: 490px) {
+
+    .footer-location {
+        /* flex-direction: column; */
+        gap: 1rem;
+    }
+    .info-instagram, .info-phone{
+        margin: 1rem 0;
+        display: flex;
+    }
+
+    .info-instagram {
+        font-size: 15px;
+    }
+
+    .info-phone {
+        font-size: 15px;
+    }
+    .footer-loc-info {
+        font-size: 15px;
+    }
 }
 /* end of footer code */
