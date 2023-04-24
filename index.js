@@ -2,13 +2,18 @@ const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".nav-links");
 const links = document.querySelectorAll(".nav-links li");
 
-hamburger.addEventListener('click', ()=>{
-   //Animate Links
+// Toggle the nav on click
+hamburger.addEventListener("click", () => {
     navLinks.classList.toggle("open");
-    links.forEach(link => {
+    links.forEach((link, index) => {
         link.classList.toggle("fade");
+        link.addEventListener("click", () => {
+            navLinks.classList.remove("open");
+            links.forEach((link) => {
+                link.classList.remove("fade");
+            });
+            hamburger.classList.remove("toggle");
+        });
     });
-
-    //Hamburger Animation
     hamburger.classList.toggle("toggle");
 });
