@@ -412,6 +412,28 @@ nav {
 /* end of my package code */
 
 /* consultation code */
+.consultation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.consultation-button {
+    background-color: #014dac;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+.consultation-button a {
+    text-decoration: none;
+    color: #fff;
+}
+
 .consultation-title,
 p {
     text-align: center;
@@ -518,6 +540,10 @@ p {
 
     .consultation-container h1:nth-child(7) {
         font-size: 16px;
+    }
+
+    .consultation-button {
+        width: 100%;
     }
 
 }
