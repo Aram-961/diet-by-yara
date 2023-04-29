@@ -530,6 +530,12 @@ p {
 
 
 @media screen and (max-width: 490px) {
+
+    .consultation-content {
+        display: flex;
+        flex-direction: column;
+    }
+
     .consultation-content {
         margin: 0 1rem;
     }
@@ -552,13 +558,13 @@ p {
 
 /* Footer  */
 #footer {
-    background-color: #48525B;
+    background-color: #94C4FF;
     padding: 1rem 1rem;
     margin-top: 1rem;
 }
 
 .footer-title {
-    color: #EAD6DF;
+    color: #014DAC;
 }
 
 .footer-location {
@@ -572,14 +578,14 @@ p {
     flex-direction: column;
     font-size: 22px;
     font-weight: bold;
-    color: #fff;
+    color: #014DAC;
     padding: 1rem 0;
 
 }
 
 .social-info a {
     text-decoration: none;
-    color: #fff;
+    color: #014DAC;
     padding: 0 1rem;
 }
 
