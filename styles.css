@@ -349,9 +349,11 @@ nav {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #fff;
-    padding: 0.5rem 2rem;
+    background-color: #014DAC;
+    color: #fff;
+    padding: 0.7rem 2rem;
     margin: 0 auto;
+    border-radius: 15px;
 }
 
 .description-box {
@@ -450,9 +452,9 @@ p {
 .consultation-content {
     display: flex;
     justify-content: space-between;
-    margin: 0 20rem;
     align-items: center;
     text-align: left;
+    gap: 5rem;
 }
 
 .consultation-content h1 {
@@ -500,6 +502,7 @@ p {
         margin: 0 2rem;
         align-items: center;
         text-align: left;
+        gap: 0;
     }
 
     .img-container {
@@ -513,6 +516,7 @@ p {
         margin: 0 2rem;
         align-items: center;
         text-align: left;
+        gap: 0;
     }
 
     .consultation-description {
@@ -534,6 +538,7 @@ p {
     .consultation-content {
         display: flex;
         flex-direction: column;
+        gap: 0;
     }
 
     .consultation-content {
@@ -549,7 +554,8 @@ p {
     }
 
     .consultation-button {
-        width: 100%;
+        padding: 1rem;
+        font-size: 17px;
     }
 
 }
