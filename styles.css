@@ -4,6 +4,7 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 /* CSS Reset */
@@ -420,6 +421,7 @@ nav {
     flex-direction: column;
     flex-grow: 0;
     align-items: center;
+    text-align: center;
 }
 
 .consultation-button {
