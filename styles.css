@@ -355,6 +355,7 @@ nav {
     padding: 0.7rem 2rem;
     margin: 0 auto;
     border-radius: 15px;
+    word-break: break-all;
 }
 
 .description-box {
@@ -410,6 +411,11 @@ nav {
 
     .packages button {
         margin-top: 5rem;
+    }
+
+    .white-box {
+        word-break: break-all;
+        width: 50%;
     }
 }
 
@@ -527,6 +533,11 @@ p {
         display: flex;
         flex-direction: column;
         gap: 0;
+    }
+
+    .consultation-description {
+        font-size: 14px;
+        word-break: keep-all;
     }
 
     .consultation-content {
