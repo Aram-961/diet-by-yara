@@ -46,6 +46,10 @@ nav {
     font-weight: bold;
 }
 
+.logo {
+    mix-blend-mode: color-burn;
+    /* background-color: #000; */
+}
 
 .logo-img {
     height: 4.5rem;
