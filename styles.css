@@ -47,9 +47,9 @@ nav {
 }
 
 
-.logo img {
-    height: 5rem;
-    width: 5rem;
+.logo-img {
+    height: 4.5rem;
+    width: 6rem;
 }
 
 .logo a {
@@ -568,6 +568,18 @@ p {
     margin-top: 1rem;
 }
 
+.footer-image {
+    display: flex;
+    align-items: center;
+}
+
+.footer-image img {
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    mix-blend-mode: color-burn;
+    width: 15%;
+}
+
 .footer-title {
     color: #014DAC;
 }
@@ -607,6 +619,14 @@ p {
     .footer-location {
         /* flex-direction: column; */
         gap: 1rem;
+    }
+
+    .footer-image {
+        flex-direction: column;
+    }
+
+    .footer-image img {
+        width: 50%;
     }
 
     .info-instagram,
