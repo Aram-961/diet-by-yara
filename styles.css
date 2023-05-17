@@ -50,6 +50,8 @@ nav {
 .logo-img {
     height: 4.5rem;
     width: 6rem;
+    mix-blend-mode: color-burn;
+
 }
 
 .logo a {
